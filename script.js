@@ -74,22 +74,6 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-// --- DARK/LIGHT MODE TOGGLE ---
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
-const icon = themeToggle.querySelector('i');
-
-themeToggle.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    if (body.classList.contains('light-mode')) {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-    } else {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-    }
-});
-
 // --- TYPING EFFECT ---
 const textArray = ["Computer Science Student", "Aspiring Software Developer", "Problem Solver"];
 const typingDelay = 100;
