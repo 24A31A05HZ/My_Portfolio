@@ -6,44 +6,6 @@ window.addEventListener("load", () => {
         loader.style.display = "none";
     }, 500);
 });
-
-/* --- CUSTOM CURSOR ---
-const cursor = document.querySelector('.cursor');
-const follower = document.querySelector('.cursor-follower');
-let posX = 0, posY = 0;
-let mouseX = 0, mouseY = 0;
-
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    
-    // Update inner cursor instantly
-    cursor.style.transform = `translate3d(${mouseX - 4}px, ${mouseY - 4}px, 0)`;
-});
-
-// Smooth follower animation using requestAnimationFrame
-function updateCursor() {
-    posX += (mouseX - posX) * 0.1;
-    posY += (mouseY - posY) * 0.1;
-    follower.style.transform = `translate3d(${posX - 15}px, ${posY - 15}px, 0)`;
-    requestAnimationFrame(updateCursor);
-}
-updateCursor();
-
-// Add hover effects for cursor
-const links = document.querySelectorAll('a, button');
-links.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-        follower.style.transform = `translate3d(${posX - 15}px, ${posY - 15}px, 0) scale(1.5)`;
-        follower.style.background = 'rgba(139, 92, 246, 0.2)';
-    });
-    link.addEventListener('mouseleave', () => {
-        follower.style.transform = `translate3d(${posX - 15}px, ${posY - 15}px, 0) scale(1)`;
-        follower.style.background = 'transparent';
-    });
-});
-*/
-
 // --- STICKY NAVBAR & SCROLL TO TOP ---
 const navbar = document.getElementById('navbar');
 const scrollTopBtn = document.querySelector('.scroll-top');
@@ -72,6 +34,22 @@ navLinks.querySelectorAll('a').forEach(link => {
         navLinks.classList.remove('active');
         hamburger.classList.remove('active');
     });
+});
+
+// --- DARK/LIGHT MODE TOGGLE ---
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+const icon = themeToggle.querySelector('i');
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    if (body.classList.contains('light-mode')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    }
 });
 
 // --- TYPING EFFECT ---
