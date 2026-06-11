@@ -8,17 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Custom cursor elements disabled -->
-    <!-- <div class="cursor"></div> -->
-    <!-- <div class="cursor-follower"></div> -->
-
     <div id="loader">
         <div class="spinner"></div>
     </div>
 
     <nav id="navbar">
         <div class="nav-content">
-            <a href="#home" class="logo">YK<span>.</span></a>
+            <a href="#home" class="logo">AYK<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,6 +24,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-controls">
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
                 <div class="hamburger">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -103,7 +100,7 @@
             <div class="skill-category reveal delay-2">
                 <h3>Databases</h3>
                 <div class="skill-tags">
-                    <span>MySQL</span>
+                    <span>MySQL</span><span>MongoDB</span><span>SQLite</span>
                 </div>
             </div>
             <div class="skill-category reveal delay-3">
@@ -115,7 +112,7 @@
             <div class="skill-category reveal delay-4">
                 <h3>Core Concepts</h3>
                 <div class="skill-tags">
-                    <span>DSA</span><span>OOPs</span><span>DBMS</span><span>Operating Systems</span>
+                    <span>DSA</span><span>OOPs</span><span>Operating Systems</span><span>DBMS</span>
                 </div>
             </div>
         </div>
@@ -136,7 +133,7 @@
                         <span>HTML</span><span>CSS</span><span>JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/24A31A05HZ/restaurant_order_booking" target="_blank" class="btn-small"><i class="fab fa-github"></i>  Code</a>
+                        <a href="https://github.com/24A31A05HZ/restaurant_order_booking" target="_blank" class="btn-small"><i class="fab fa-github"></i> Code</a>
                         <a href="https://24a31a05hz.github.io/restaurant_order_booking/" target="_blank" class="btn-small primary-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
@@ -153,7 +150,7 @@
                         <span>Python</span><span>Security</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/24A31A05HZ/Random_Password_Generator" target="_blank" class="btn-small"><i class="fab fa-github"></i>  Code</a>
+                        <a href="https://github.com/24A31A05HZ/Random_Password_Generator" target="_blank" class="btn-small"><i class="fab fa-github"></i> Source Code</a>
                     </div>
                 </div>
             </div>
@@ -164,21 +161,27 @@
     <section id="achievements" class="section dark-bg">
         <div class="container dual-section">
             <div class="achievements-wrap reveal">
-                <h2 class="section-title text-left">My <span>Achievements</span></h2>
-                <ul class="timeline">
-                    <li>
+                <h2 class="section-title">My <span>Achievements</span></h2>
+                <div class="achievement-cards">
+                    <div class="achievement-card">
                         <i class="fas fa-code"></i>
-                        <p>Solved <strong>350+ DSA and problem-solving questions</strong> across LeetCode and HackerRank.</p>
-                    </li>
-                    <li>
+                        <div>
+                            <h4>DSA & Problem Solving</h4>
+                            <p>Solved <strong>350+ DSA and problem-solving questions</strong> across LeetCode and HackerRank.</p>
+                            <div class="achievement-links">
+                                <a href="https://leetcode.com/u/24A31A05HZ/" target="_blank" class="btn-small primary-btn">LeetCode</a>
+                                <a href="https://www.hackerrank.com/profile/24A31A05HZ" target="_blank" class="btn-small secondary-btn">HackerRank</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
                         <i class="fas fa-trophy"></i>
-                        <p>Participated in multiple college hackathons and coding contests under time constraints.</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-brain"></i>
-                        <p>Demonstrated strong problem-solving and consistent continuous learning mindset.</p>
-                    </li>
-                </ul>
+                        <div>
+                            <h4>Hackathons & Contests</h4>
+                            <p>Participated in multiple college hackathons and coding contests under time constraints.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="certifications-wrap reveal delay-1">
