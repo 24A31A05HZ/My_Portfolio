@@ -3,19 +3,14 @@
 
 :root {
     --bg-color: #000000;
-    --bg-alt: #000000;
-    --surface: #111827;
-    --surface-deep: #0f172a;
-    --nav-bg: rgba(30, 34, 45, 0.96);
-    --nav-border: rgba(255, 255, 255, 0.08);
-    --section-divider: rgba(255, 255, 255, 0.06);
+    --bg-alt: #0a0a0a;
     --text-color: #e2e8f0;
     --text-alt: #94a3b8;
     --primary: #8b5cf6;
     --secondary: #3b82f6;
     --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
-    --glass-bg: rgba(17, 24, 39, 0.9);
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -51,30 +46,6 @@ body {
     padding: 0 2rem;
 }
 
-/* --- CUSTOM CURSOR ---
-.cursor {
-    width: 8px;
-    height: 8px;
-    background: var(--primary);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.1s ease;
-}
-
-.cursor-follower {
-    width: 30px;
-    height: 30px;
-    border: 2px solid var(--secondary);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9998;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-*/
-
 /* --- LOADER --- */
 #loader {
     position: fixed;
@@ -102,11 +73,7 @@ body {
 @keyframes spin { 100% { transform: rotate(360deg); } }
 
 /* --- TYPOGRAPHY & TITLES --- */
-.section {
-    padding: 100px 0;
-    border-top: 1px solid var(--section-divider);
-}
-.section:first-of-type { border-top: none; }
+.section { padding: 100px 0; }
 .dark-bg { background-color: var(--bg-alt); }
 
 .section-title {
@@ -128,18 +95,16 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     z-index: 1000;
     transition: var(--transition);
-    background: var(--nav-bg);
-    border-bottom: 1px solid var(--nav-border);
 }
 
 nav.scrolled {
-    padding: 0.85rem 0;
-    background: rgba(28, 33, 44, 0.98);
+    padding: 1rem 0;
+    background: var(--glass-bg);
     backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid var(--glass-border);
 }
 
 .nav-content {
@@ -182,6 +147,14 @@ nav.scrolled {
     gap: 1.5rem;
 }
 
+#theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .hamburger { display: none; cursor: pointer; }
 .hamburger .bar {
     width: 25px;
@@ -193,11 +166,11 @@ nav.scrolled {
 
 /* --- HERO SECTION --- */
 .hero {
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    padding: 6rem 2rem 2rem;
+    padding: 0 2rem;
 }
 
 .hero-content {
@@ -284,8 +257,8 @@ nav.scrolled {
 .hero-bg {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: radial-gradient(circle at top right, rgba(0, 0, 0, 0.2), transparent 40%),
-                radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.15), transparent 40%);
+    background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.1), transparent 40%),
+                radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.1), transparent 40%);
     z-index: 1;
 }
 
@@ -304,8 +277,8 @@ nav.scrolled {
 }
 
 .stat-card {
-    background: rgba(17, 24, 39, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -331,8 +304,8 @@ nav.scrolled {
 }
 
 .skill-category {
-    background: rgba(17, 24, 39, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
     padding: 2rem;
     border-radius: 15px;
     transition: var(--transition);
@@ -364,8 +337,8 @@ nav.scrolled {
 }
 
 .project-card {
-    background: rgba(17, 24, 39, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
     border-radius: 20px;
     overflow: hidden;
     transition: var(--transition);
@@ -423,37 +396,100 @@ nav.scrolled {
 /* --- ACHIEVEMENTS & CERTS --- */
 .dual-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
 }
 
-.timeline { list-style: none; border-left: 2px solid var(--primary); padding-left: 2rem; }
-.timeline li { margin-bottom: 2.5rem; position: relative; }
-.timeline li i {
-    position: absolute;
-    left: -2.9rem;
-    top: 0;
-    background: var(--bg-alt);
-    color: var(--primary);
-    width: 30px; height: 30px;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    border: 2px solid var(--primary);
+.achievements-wrap {
+    padding-bottom: 2rem;
 }
 
-.cert-cards { display: flex; flex-direction: column; gap: 1.5rem; }
+.certifications-wrap {
+    padding-top: 2rem;
+}
+
+.achievement-cards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.achievement-card {
+    display: flex;
+    gap: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 1.8rem;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card i {
+    font-size: 2rem;
+    color: var(--primary);
+    min-width: 45px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-alt);
+    border-radius: 50%;
+    border: 1px solid var(--glass-border);
+}
+
+.achievement-card div {
+    flex: 1;
+}
+
+.achievement-card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.achievement-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.achievement-links .btn-small {
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    border-width: 1px;
+}
+
+.cert-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
 .cert-card {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    background: rgba(17, 24, 39, 0.95);
+    background: var(--glass-bg);
     padding: 1.5rem;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--glass-border);
     transition: var(--transition);
 }
-.cert-card:hover { transform: translateX(10px); border-color: var(--primary); }
+.cert-card:hover { transform: translateY(-5px); border-color: var(--primary); }
 .cert-card i { font-size: 2.5rem; color: var(--secondary); }
+
+@media(max-width: 992px) {
+    .dual-section { grid-template-columns: 1fr; }
+    .cert-cards { grid-template-columns: 1fr 1fr; }
+}
+
+@media(max-width: 768px) {
+    .cert-cards { grid-template-columns: 1fr; }
+}
 
 /* --- CONTACT SECTION --- */
 .contact-container {
@@ -481,8 +517,8 @@ nav.scrolled {
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 1rem 1.5rem;
-    background: rgba(17, 24, 39, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
     border-radius: 10px;
     color: var(--text-color);
     outline: none;
@@ -490,6 +526,17 @@ nav.scrolled {
 }
 .contact-form input:focus, .contact-form textarea:focus { border-color: var(--primary); }
 .w-100 { width: 100%; cursor: pointer; }
+
+/* --- SECTION DIVIDERS --- */
+#about .section-title,
+#skills .section-title,
+#projects .section-title,
+#achievements .section-title,
+#contact .section-title {
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1.5rem;
+    margin-top: 0;
+}
 
 /* --- FOOTER & MISC --- */
 footer {
