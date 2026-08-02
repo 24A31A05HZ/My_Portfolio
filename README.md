@@ -1,85 +1,66 @@
-# Anusuri Yaswanth Kumar
+# ANUSURI YASWANTH KUMAR — Portfolio
 
-Computer Science Engineering Student | Software Developer | Problem Solver
+A modern, responsive personal portfolio showcasing my **projects, technical skills, achievements, certifications, and developer journey**.
 
-A modern, responsive personal portfolio website showcasing my projects, technical skills, achievements, certifications, and coding journey.
+## 🚀 About
 
-## About Me
+I’m a **Computer Science Engineering student at Pragati Engineering College**, passionate about software development, problem solving, and building practical web applications.
 
-I am a Computer Science Engineering student at Pragati Engineering College with a CGPA of **9.47/10**. I am passionate about software development, problem-solving, and building impactful applications.
+* 🎓 B.Tech CSE — 2024–2028
+* 📊 CGPA — 9.48/10
+* 💻 450+ DSA Problems Solved
+* 🛠️ Focus Areas — Java, Python, Web Development & DSA
 
-My focus areas include:
-
-* Data Structures & Algorithms
-* Web Development
-* Object-Oriented Programming
-* Database Management Systems
-* Software Engineering Fundamentals
-
-I continuously improve my skills through hands-on projects, coding challenges, hackathons, and technical learning programs.
-
-## Highlights
-
-* CGPA: **9.47/10**
-* Solved **350+ DSA Problems**
-* Built Responsive Web Applications
-* Active Hackathon Participant
-* Strong Foundation in Java, Python, SQL, and Web Technologies
-
-## Tech Stack
-
-**Languages**
-
-* Java
-* Python
-* C
-
-**Web Technologies**
-
-* HTML5
-* CSS3
-* JavaScript
-
-**Database**
-
-* MySQL
-
-**Tools**
-
-* Git
-* GitHub
-* VS Code
-
-## Featured Projects
+## 🧩 Featured Project
 
 ### Restaurant Booking Platform
 
-A responsive restaurant reservation application featuring interactive booking functionality, modern UI design, and seamless user experience.
+A responsive restaurant booking platform built with **HTML, CSS, and JavaScript**, featuring restaurant information and an intuitive reservation workflow.
 
-**Technologies:** HTML, CSS, JavaScript
+**Tech Stack:** HTML · CSS · JavaScript
 
-### Password Generator Security Tool
+## 🛠️ Tech Stack
 
-A Python application that generates strong and secure passwords with customizable complexity controls.
+**Languages:** Java, Python
+**Frontend:** HTML, CSS, JavaScript
+**Database:** MySQL
+**Tools:** Git, GitHub, VS Code
+**Core:** DSA, OOPs, DBMS, Operating Systems, Computer Networks
 
-**Technologies:** Python
+## 🏆 Achievements
 
-## Certifications
+* Solved **450+ DSA and problem-solving questions** across LeetCode and HackerRank.
+* Participated in college hackathons and coding contests.
+* Continuously building projects and improving problem-solving skills.
 
-* AWS AI-ML Virtual Internship
-* Google Android Developer Virtual Internship
-* Microsoft Fundamental AI Concepts
+## 📜 Certifications
 
-## Connect With Me
+* **AWS Academy** — AI-ML Virtual Internship
+* **Google for Developers** — Android Developer Virtual Internship
+* **Microsoft Learn** — Fundamental AI Concepts
 
-📧 Email: [yaswanthanusuri05@gmail.com](mailto:yaswanthanusuri05@gmail.com)
+## 🔗 Connect
 
-💼 LinkedIn: [yaswanth-kumar-anusuri](http://www.linkedin.com/in/yaswanth-kumar-anusuri-957080338)
+## 🔗 Connect
 
-💻 GitHub: github.com/24A31A05HZ
+- [Portfolio Website](https://24a31a05hz.github.io/My_Portfolio/)
+- [GitHub](https://github.com/24A31A05HZ)
+- [LinkedIn](https://www.linkedin.com/in/yaswanth-kumar-anusuri-957080338)
+- [LeetCode](https://leetcode.com/u/24A31A05HZ/)
+- [HackerRank](https://www.hackerrank.com/profile/24A31A05HZ)
 
-🧩 LeetCode: leetcode.com/u/24A31A05HZ
+## 💡 Built With
 
-## Portfolio
+This portfolio is built using:
 
-Visit my portfolio website to learn more about my projects, skills, and achievements.
+`HTML` · `CSS` · `JavaScript`
+
+Designed with a focus on **simplicity, performance, responsiveness, accessibility, and a distinctive user experience**.
+
+---
+
+### 📌 Status
+
+Actively learning, building, and improving.
+
+**© 2026 ANUSURI YASWANTH KUMAR**
